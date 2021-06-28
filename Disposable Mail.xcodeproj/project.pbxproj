@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04508D1C268A1F6B008E24C0 /* HTMLStringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04508D1B268A1F6B008E24C0 /* HTMLStringView.swift */; };
+		04B508D0268A074B0058718D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B508CF268A074B0058718D /* AppDelegate.swift */; };
+		04B508D2268A074B0058718D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B508D1268A074B0058718D /* SceneDelegate.swift */; };
+		04B508D4268A074B0058718D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B508D3268A074B0058718D /* ContentView.swift */; };
+		04B508D6268A074C0058718D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B508D5268A074C0058718D /* Assets.xcassets */; };
+		04B508D9268A074C0058718D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B508D8268A074C0058718D /* Preview Assets.xcassets */; };
+		04B508DC268A074C0058718D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B508DA268A074C0058718D /* LaunchScreen.storyboard */; };
+		04B508E7268A074C0058718D /* Disposable_MailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B508E6268A074C0058718D /* Disposable_MailTests.swift */; };
+		04B508F2268A074C0058718D /* Disposable_MailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B508F1268A074C0058718D /* Disposable_MailUITests.swift */; };
+		04B50901268A07860058718D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 04B50900268A07860058718D /* Alamofire */; };
+		04B5090B268A085D0058718D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5090A268A085D0058718D /* HomeView.swift */; };
+		04B5090D268A08620058718D /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5090C268A08620058718D /* HomeVM.swift */; };
+		04B50915268A092D0058718D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B50914268A092D0058718D /* Api.swift */; };
+		04B50918268A12F60058718D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B50917268A12F60058718D /* DetailView.swift */; };
+		04B5091B268A13020058718D /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5091A268A13020058718D /* DetailVM.swift */; };
+		04B5091D268A147B0058718D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5091C268A147B0058718D /* Message.swift */; };
+		04B5091F268A18490058718D /* MessageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5091E268A18490058718D /* MessageDetailView.swift */; };
+		04B50921268A195C0058718D /* MessageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B50920268A195C0058718D /* MessageDetail.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04B508E3268A074C0058718D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04B508C4268A074B0058718D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04B508CB268A074B0058718D;
+			remoteInfo = "Disposable Mail";
+		};
+		04B508EE268A074C0058718D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04B508C4268A074B0058718D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04B508CB268A074B0058718D;
+			remoteInfo = "Disposable Mail";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04508D1B268A1F6B008E24C0 /* HTMLStringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLStringView.swift; sourceTree = "<group>"; };
+		04B508CC268A074B0058718D /* Disposable Mail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Disposable Mail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B508CF268A074B0058718D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04B508D1268A074B0058718D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04B508D3268A074B0058718D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04B508D5268A074C0058718D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04B508D8268A074C0058718D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04B508DB268A074C0058718D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04B508DD268A074C0058718D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B508E2268A074C0058718D /* Disposable MailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Disposable MailTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B508E6268A074C0058718D /* Disposable_MailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable_MailTests.swift; sourceTree = "<group>"; };
+		04B508E8268A074C0058718D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B508ED268A074C0058718D /* Disposable MailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Disposable MailUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B508F1268A074C0058718D /* Disposable_MailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable_MailUITests.swift; sourceTree = "<group>"; };
+		04B508F3268A074C0058718D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B5090A268A085D0058718D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		04B5090C268A08620058718D /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		04B50914268A092D0058718D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		04B50917268A12F60058718D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		04B5091A268A13020058718D /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
+		04B5091C268A147B0058718D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		04B5091E268A18490058718D /* MessageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailView.swift; sourceTree = "<group>"; };
+		04B50920268A195C0058718D /* MessageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetail.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04B508C9268A074B0058718D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B50901268A07860058718D /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B508DF268A074C0058718D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B508EA268A074C0058718D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04508D1A268A1F61008E24C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04508D1B268A1F6B008E24C0 /* HTMLStringView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04B508C3268A074B0058718D = {
+			isa = PBXGroup;
+			children = (
+				04B508CE268A074B0058718D /* Disposable Mail */,
+				04B508E5268A074C0058718D /* Disposable MailTests */,
+				04B508F0268A074C0058718D /* Disposable MailUITests */,
+				04B508CD268A074B0058718D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04B508CD268A074B0058718D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04B508CC268A074B0058718D /* Disposable Mail.app */,
+				04B508E2268A074C0058718D /* Disposable MailTests.xctest */,
+				04B508ED268A074C0058718D /* Disposable MailUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04B508CE268A074B0058718D /* Disposable Mail */ = {
+			isa = PBXGroup;
+			children = (
+				04B50903268A07C20058718D /* App */,
+				04B5090E268A086A0058718D /* Core */,
+				04B50905268A08080058718D /* Module */,
+				04B50904268A07C70058718D /* Supporting Files */,
+				04B508D7268A074C0058718D /* Preview Content */,
+			);
+			path = "Disposable Mail";
+			sourceTree = "<group>";
+		};
+		04B508D7268A074C0058718D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04B508D8268A074C0058718D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04B508E5268A074C0058718D /* Disposable MailTests */ = {
+			isa = PBXGroup;
+			children = (
+				04B508E6268A074C0058718D /* Disposable_MailTests.swift */,
+				04B508E8268A074C0058718D /* Info.plist */,
+			);
+			path = "Disposable MailTests";
+			sourceTree = "<group>";
+		};
+		04B508F0268A074C0058718D /* Disposable MailUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04B508F1268A074C0058718D /* Disposable_MailUITests.swift */,
+				04B508F3268A074C0058718D /* Info.plist */,
+			);
+			path = "Disposable MailUITests";
+			sourceTree = "<group>";
+		};
+		04B50903268A07C20058718D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				04B508CF268A074B0058718D /* AppDelegate.swift */,
+				04B508D1268A074B0058718D /* SceneDelegate.swift */,
+				04B508D3268A074B0058718D /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04B50904268A07C70058718D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04B508D5268A074C0058718D /* Assets.xcassets */,
+				04B508DA268A074C0058718D /* LaunchScreen.storyboard */,
+				04B508DD268A074C0058718D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04B50905268A08080058718D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				04B50908268A08280058718D /* Home */,
+				04B50916268A12E70058718D /* Detail */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		04B50908268A08280058718D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04B5090A268A085D0058718D /* HomeView.swift */,
+				04B5090C268A08620058718D /* HomeVM.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		04B5090E268A086A0058718D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				04B50912268A09110058718D /* Domain */,
+				04B50910268A09050058718D /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		04B5090F268A08710058718D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04B50910268A09050058718D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04508D1A268A1F61008E24C0 /* View */,
+				04B50911268A09090058718D /* Api */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		04B50911268A09090058718D /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				04B50914268A092D0058718D /* Api.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		04B50912268A09110058718D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				04B50913268A091F0058718D /* Response */,
+				04B5090F268A08710058718D /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		04B50913268A091F0058718D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				04B5091C268A147B0058718D /* Message.swift */,
+				04B50920268A195C0058718D /* MessageDetail.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		04B50916268A12E70058718D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				04B50917268A12F60058718D /* DetailView.swift */,
+				04B5091E268A18490058718D /* MessageDetailView.swift */,
+				04B5091A268A13020058718D /* DetailVM.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04B508CB268A074B0058718D /* Disposable Mail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B508F6268A074C0058718D /* Build configuration list for PBXNativeTarget "Disposable Mail" */;
+			buildPhases = (
+				04B508C8268A074B0058718D /* Sources */,
+				04B508C9268A074B0058718D /* Frameworks */,
+				04B508CA268A074B0058718D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Disposable Mail";
+			packageProductDependencies = (
+				04B50900268A07860058718D /* Alamofire */,
+			);
+			productName = "Disposable Mail";
+			productReference = 04B508CC268A074B0058718D /* Disposable Mail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04B508E1268A074C0058718D /* Disposable MailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B508F9268A074C0058718D /* Build configuration list for PBXNativeTarget "Disposable MailTests" */;
+			buildPhases = (
+				04B508DE268A074C0058718D /* Sources */,
+				04B508DF268A074C0058718D /* Frameworks */,
+				04B508E0268A074C0058718D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04B508E4268A074C0058718D /* PBXTargetDependency */,
+			);
+			name = "Disposable MailTests";
+			productName = "Disposable MailTests";
+			productReference = 04B508E2268A074C0058718D /* Disposable MailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04B508EC268A074C0058718D /* Disposable MailUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B508FC268A074C0058718D /* Build configuration list for PBXNativeTarget "Disposable MailUITests" */;
+			buildPhases = (
+				04B508E9268A074C0058718D /* Sources */,
+				04B508EA268A074C0058718D /* Frameworks */,
+				04B508EB268A074C0058718D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04B508EF268A074C0058718D /* PBXTargetDependency */,
+			);
+			name = "Disposable MailUITests";
+			productName = "Disposable MailUITests";
+			productReference = 04B508ED268A074C0058718D /* Disposable MailUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04B508C4268A074B0058718D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					04B508CB268A074B0058718D = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					04B508E1268A074C0058718D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 04B508CB268A074B0058718D;
+					};
+					04B508EC268A074C0058718D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 04B508CB268A074B0058718D;
+					};
+				};
+			};
+			buildConfigurationList = 04B508C7268A074B0058718D /* Build configuration list for PBXProject "Disposable Mail" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04B508C3268A074B0058718D;
+			packageReferences = (
+				04B508FF268A07860058718D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 04B508CD268A074B0058718D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04B508CB268A074B0058718D /* Disposable Mail */,
+				04B508E1268A074C0058718D /* Disposable MailTests */,
+				04B508EC268A074C0058718D /* Disposable MailUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04B508CA268A074B0058718D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B508DC268A074C0058718D /* LaunchScreen.storyboard in Resources */,
+				04B508D9268A074C0058718D /* Preview Assets.xcassets in Resources */,
+				04B508D6268A074C0058718D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B508E0268A074C0058718D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B508EB268A074C0058718D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04B508C8268A074B0058718D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B50915268A092D0058718D /* Api.swift in Sources */,
+				04B508D0268A074B0058718D /* AppDelegate.swift in Sources */,
+				04508D1C268A1F6B008E24C0 /* HTMLStringView.swift in Sources */,
+				04B5090D268A08620058718D /* HomeVM.swift in Sources */,
+				04B5091D268A147B0058718D /* Message.swift in Sources */,
+				04B50918268A12F60058718D /* DetailView.swift in Sources */,
+				04B5090B268A085D0058718D /* HomeView.swift in Sources */,
+				04B508D2268A074B0058718D /* SceneDelegate.swift in Sources */,
+				04B508D4268A074B0058718D /* ContentView.swift in Sources */,
+				04B5091B268A13020058718D /* DetailVM.swift in Sources */,
+				04B50921268A195C0058718D /* MessageDetail.swift in Sources */,
+				04B5091F268A18490058718D /* MessageDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B508DE268A074C0058718D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B508E7268A074C0058718D /* Disposable_MailTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B508E9268A074C0058718D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B508F2268A074C0058718D /* Disposable_MailUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04B508E4268A074C0058718D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04B508CB268A074B0058718D /* Disposable Mail */;
+			targetProxy = 04B508E3268A074C0058718D /* PBXContainerItemProxy */;
+		};
+		04B508EF268A074C0058718D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04B508CB268A074B0058718D /* Disposable Mail */;
+			targetProxy = 04B508EE268A074C0058718D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04B508DA268A074C0058718D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B508DB268A074C0058718D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04B508F4268A074C0058718D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04B508F5268A074C0058718D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04B508F7268A074C0058718D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Disposable Mail/Preview Content\"";
+				DEVELOPMENT_TEAM = SWR83G7DDM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Disposable Mail/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.addindev.Disposable-Mail";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04B508F8268A074C0058718D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Disposable Mail/Preview Content\"";
+				DEVELOPMENT_TEAM = SWR83G7DDM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Disposable Mail/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.addindev.Disposable-Mail";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04B508FA268A074C0058718D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWR83G7DDM;
+				INFOPLIST_FILE = "Disposable MailTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.addindev.Disposable-MailTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Disposable Mail.app/Disposable Mail";
+			};
+			name = Debug;
+		};
+		04B508FB268A074C0058718D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWR83G7DDM;
+				INFOPLIST_FILE = "Disposable MailTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.addindev.Disposable-MailTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Disposable Mail.app/Disposable Mail";
+			};
+			name = Release;
+		};
+		04B508FD268A074C0058718D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWR83G7DDM;
+				INFOPLIST_FILE = "Disposable MailUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.addindev.Disposable-MailUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Disposable Mail";
+			};
+			name = Debug;
+		};
+		04B508FE268A074C0058718D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWR83G7DDM;
+				INFOPLIST_FILE = "Disposable MailUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.addindev.Disposable-MailUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Disposable Mail";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04B508C7268A074B0058718D /* Build configuration list for PBXProject "Disposable Mail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B508F4268A074C0058718D /* Debug */,
+				04B508F5268A074C0058718D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B508F6268A074C0058718D /* Build configuration list for PBXNativeTarget "Disposable Mail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B508F7268A074C0058718D /* Debug */,
+				04B508F8268A074C0058718D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B508F9268A074C0058718D /* Build configuration list for PBXNativeTarget "Disposable MailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B508FA268A074C0058718D /* Debug */,
+				04B508FB268A074C0058718D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B508FC268A074C0058718D /* Build configuration list for PBXNativeTarget "Disposable MailUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B508FD268A074C0058718D /* Debug */,
+				04B508FE268A074C0058718D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04B508FF268A07860058718D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04B50900268A07860058718D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04B508FF268A07860058718D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 04B508C4268A074B0058718D /* Project object */;
+}
