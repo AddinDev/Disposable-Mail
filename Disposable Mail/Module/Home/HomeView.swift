@@ -54,12 +54,34 @@ extension HomeView {
                                                domain: vm.domains[selected])) {
         Text("\(username == "" ? "username" : username)@\(vm.domains[selected])")
         }
+        .contextMenu {
+          Button(action: {
+            UIPasteboard.general.string = "\(username)@\(vm.domains[selected])"
+          }) {
+            Text("Copy to clipboard")
+            Image(systemName: "doc.on.doc")
+          }
+        }
         .disabled(username == "" ? true : false)
-        
       }
       
+//      Section {
+//        Button(action: {
+//          UIPasteboard.general.string = "\(username)@\(vm.domains[selected])"
+//        }) {
+//          HStack {
+//          Text("Copy Email")
+//            Spacer()
+//          Image(systemName: "doc.on.doc")
+//          }
+//        }
+//        .disabled(username == "" ? true : false)
+//      }
+      
       Section {
-        TextField("username", text: $username)
+        TextField("username", text: $username, onCommit: {
+          UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        })
           .autocapitalization(.none)
           .disableAutocorrection(true)
       }
