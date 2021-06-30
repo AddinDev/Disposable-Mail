@@ -11,6 +11,8 @@ struct HomeView: View {
   
   @ObservedObject private var vm = HomeVM()
   
+  @State var showMessages: Bool = false
+  
   @State var username: String = ""
   @State var selected: Int = 0
   
@@ -26,9 +28,16 @@ struct HomeView: View {
         content
       }
     }
+    .sheet(isPresented: $showMessages, content: {
+      NavigationView {
+      DetailView(username: username, domain: vm.domains[selected])
+        .navigationBarTitle("", displayMode: .inline)
+        .navigationBarHidden(true)
+      }
+    })
     .onAppear {
       if vm.domains.count == 0 {
-      vm.getDomains()
+        vm.getDomains()
       }
     }
   }
@@ -50,9 +59,10 @@ extension HomeView {
     Form {
       
       if vm.domains.count != 0 {
-        NavigationLink(destination: DetailView(username: username,
-                                               domain: vm.domains[selected])) {
-        Text("\(username == "" ? "username" : username)@\(vm.domains[selected])")
+        Button(action: {
+          showMessages = true
+        }) {
+          Text("\(username == "" ? "username" : username)@\(vm.domains[selected])")
         }
         .contextMenu {
           Button(action: {
@@ -65,25 +75,25 @@ extension HomeView {
         .disabled(username == "" ? true : false)
       }
       
-//      Section {
-//        Button(action: {
-//          UIPasteboard.general.string = "\(username)@\(vm.domains[selected])"
-//        }) {
-//          HStack {
-//          Text("Copy Email")
-//            Spacer()
-//          Image(systemName: "doc.on.doc")
-//          }
-//        }
-//        .disabled(username == "" ? true : false)
-//      }
+      //      Section {
+      //        Button(action: {
+      //          UIPasteboard.general.string = "\(username)@\(vm.domains[selected])"
+      //        }) {
+      //          HStack {
+      //          Text("Copy Email")
+      //            Spacer()
+      //          Image(systemName: "doc.on.doc")
+      //          }
+      //        }
+      //        .disabled(username == "" ? true : false)
+      //      }
       
       Section {
         TextField("username", text: $username, onCommit: {
           UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
         })
-          .autocapitalization(.none)
-          .disableAutocorrection(true)
+        .autocapitalization(.none)
+        .disableAutocorrection(true)
       }
       
       Section {

@@ -30,10 +30,10 @@ struct MessageDetailView: View {
       }
     }
     .onAppear {
-      if i == 0 {
+      i += 1
+      if i == 1 {
         vm.getDetail(username, domain, id)
       }
-      i += 1
     }
   }
   
@@ -56,10 +56,10 @@ extension MessageDetailView {
   
   var content: some View {
     ScrollView {
-      VStack {
-        Text(message.from)
-        Text(message.subject)
-        Text(message.date)
+      VStack(alignment: .leading) {
+        Text("from: \(message.from)")
+        Text("subject: \(message.subject)")
+        Text("date: \(message.date)")
         HTMLStringView(htmlContent: message.htmlBody)
           .frame(height: screen.height / 3)
       }

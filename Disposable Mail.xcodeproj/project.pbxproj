@@ -209,13 +209,6 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		04B5090F268A08710058718D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		04B50910268A09050058718D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				04B50913268A091F0058718D /* Response */,
-				04B5090F268A08710058718D /* Model */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
